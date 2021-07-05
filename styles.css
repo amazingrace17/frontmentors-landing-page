@@ -10,21 +10,60 @@ body{
     max-width:100%;
     background-size: cover;
 }
-nav{
+nav {
     display:flex;
     justify-content: space-between;
     text-decoration: none;
+    background-color: #1c2431;
+    font-family: "Raleway", sans-serif;
+    position: relative;
 }
+nav .li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav img {
+    height: 30px;
+    margin-left: 5%;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 article{
     display:grid;
     justify-content: center;
     padding: 30px;
-    width:300px;
+    width:50%;
     height: 500px;
+    margin:auto
     
 }
-
+picture img {
+    position: absolute;
+    bottom: -10px;
+    z-index: -10;
+    width: 100%;
+    left: 0;
+  }
 .logo{
     width:300px;
     justify-content:center;
@@ -37,12 +76,14 @@ article{
     justify-content: center;
     grid-gap: 10px;
     height: 500px;
-    
+    width:50%;
+    margin:auto;
 }
 .grid-items{
     justify-content: space-around;
     padding:10px;
     border: 10px;
+    margin:auto;
     /* display: flex; */
 }
 
@@ -54,7 +95,8 @@ article{
     height:300px;
     padding:20px;
     border:20px;
-    
+    width:70%;
+    margin:auto;
 }
 
 .middle{
